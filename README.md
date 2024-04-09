@@ -3,7 +3,9 @@
 ## Our Mission
 Human Generated mission is to mark text online that is human generated. Upload content and then you will receive a seal of authenicity and a URL for proof. The goal is to become a source of truth for people online.
 
-Building The I.D.H.G.C (International Databse of Human Generated Content). This resource will prove to be vital in the coming years.
+Goal is to build what we call the I.D.H.G.C (International Databse of Human Generated Content). 
+
+This resource will prove to be vital in the coming years.
 
 ## Archetecture
 
