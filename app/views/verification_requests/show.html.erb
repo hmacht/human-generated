@@ -1,0 +1,15 @@
+<h1>Verification Request</h1>
+<p>status: <%= @verification_request.status %></p>
+Embed:
+<pre>
+  <code>
+    &lt;a href="<%= @verification_request.certified_url %>"&gt;
+      &lt;img src="path_to_your_image_file" alt="Human Generated"&gt;
+    &lt;/a&gt;
+  </code>
+</pre>
+
+<% if @verification_request.success? %>
+  <p>Title: <%= @verification_request.title %></p>
+  <p>Content: <%= @verification_request.content %></p>
+<% end %>

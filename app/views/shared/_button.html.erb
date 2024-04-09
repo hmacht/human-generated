@@ -1,0 +1,6 @@
+<%= link_to url, class: classes do %>
+  <% unless icon.nil? %>
+    <i class="fa-solid fa-<%= icon %>"></i>
+  <% end %>
+  <%= text %>
+<% end %>

@@ -1,0 +1,2 @@
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH" /Users/henrymacht/.zshrc
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH" /Users/henrymacht/.zshrc

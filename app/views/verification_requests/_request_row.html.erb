@@ -1,0 +1,22 @@
+<tr>
+  <td class="px-4 py-4 text-sm font-medium whitespace-nowrap">
+    <div>
+      <h2 class="font-medium text-gray-800 "><%= verification_request.title %></h2>
+    </div>
+  </td>
+  <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+    <% badge_color = verification_request.success? ? "emerald" : verification_request.fail? ? "red" : "gray"  %>
+    <%= render "shared/badge", text: verification_request.status, color: badge_color %>
+  </td>
+  <td class="px-4 py-4 text-sm whitespace-nowrap">
+    <div>
+      <h4 class="text-gray-700"><%= verification_request.created_at %></h4>
+    </div>
+  </td>
+
+  <td class="px-4 py-4 text-sm whitespace-nowrap">
+    <%= link_to verification_request_path(verification_request) do %>
+      <i class="fa-regular fa-eye"></i>
+    <% end %>
+  </td>
+</tr>

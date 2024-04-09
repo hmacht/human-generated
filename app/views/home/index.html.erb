@@ -1,0 +1,12 @@
+<p>Landing Page</p>
+<p>Human Generated</p>
+<p>Explain the mission</p>
+
+
+<% if current_user %>
+  <p>Hello, <%=current_user.email%></p>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+  <%= link_to "Verification Requests", verification_requests_path %>
+<% else %>
+  <%= link_to "Get Started", new_user_registration_path %>
+<% end %>
