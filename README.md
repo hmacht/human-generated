@@ -5,6 +5,7 @@ Human Generated mission is to mark text online that is human generated. Upload c
 
 Goal is to build what we call the I.D.H.G.C (International Databse of Human Generated Content). 
 
+
 This resource will prove to be vital in the coming years.
 
 ## Archetecture
