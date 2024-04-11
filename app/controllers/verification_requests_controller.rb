@@ -1,8 +1,8 @@
 class VerificationRequestsController < ApplicationController
-  before_action :authenticate_user!
-  before_action :set_verification_requests, only: [:index, :show]
+  before_action :authenticate_user!, except: [:show] 
 
   def index
+    @verification_requests = current_user.verification_requests
   end
 
   def new
@@ -10,7 +10,7 @@ class VerificationRequestsController < ApplicationController
   end
 
   def show 
-    @verification_request = @verification_requests.find(params[:id])
+    @verification_request = VerificationRequest.find(params[:id])
   end
   
   def create
@@ -30,9 +30,5 @@ class VerificationRequestsController < ApplicationController
   
   def verification_request_params
     params.require(:verification_request).permit(:title, :content).merge(user_id: current_user.id)
-  end
-
-  def set_verification_requests
-    @verification_requests = current_user.verification_requests
   end
 end
