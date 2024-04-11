@@ -2,7 +2,7 @@ class VerificationRequest < ApplicationRecord
   belongs_to :user
 
   validates :title, presence: true
-  validates :content, presence: true
+  validates :content, presence: true, length: { minimum: 250 }
 
   module STATUS
     SUCCESS = "success"

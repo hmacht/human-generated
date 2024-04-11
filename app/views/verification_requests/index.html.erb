@@ -3,9 +3,9 @@
 <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
   <div class="py-4 flex justify-between items-center">
     <%= button_link("New Request", new_verification_request_path, color: "black", icon: "plus") %>
-    <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "px-2" %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "px-2 text-sm" %>
   </div>
-
+  
   <%= render "verification_requests/request_table" %>
 
   <div class="text-gray-400 p-4 text-center text-xs">
@@ -14,6 +14,6 @@
       <i class="fa-solid fa-earth-americas"></i>
     </div>
     <p>Human Generated is a free to use open source project</p>
-    <p>Find us on <a><u>GitHub</u></a></p>
+    <p>Find us on <a href="https://github.com/hmacht/human-generated"><u>GitHub</u></a></p>
   </div>
 </div>
